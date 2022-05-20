@@ -20,7 +20,7 @@ Here, we have to mask it and load it in the form of array. <br>
 
 Now, keep this mask as parameter to wordcoud method.
 
-**wordcloud = WordCloud(width = 7000, height = 5000, random_state=1, prefer_horizontal=1,background_color='white', contour_color='cornflowerblue', colormap='Set2', contour_width=4, collocations=True, mask=mask).generate(text) **  <br>
+**wordcloud = WordCloud(width = 7000, height = 5000, random_state=1, prefer_horizontal=1,background_color='white', contour_color='cornflowerblue', colormap='Set2', contour_width=4, collocations=True, mask=mask).generate(text)**  <br>
 
 Now, plot it: <br>
 
