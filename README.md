@@ -16,16 +16,16 @@ For example, let's say we want our wordcloud to be in the shape of a below car-
 
 Here, we have to mask it and load it in the form of array. <br>
 
-mask = np.array(Image.open('car.jpg'))
+**mask = np.array(Image.open('car.jpg'))**
 
 Now, keep this mask as parameter to wordcoud method.
 
-wordcloud = WordCloud(width = 7000, height = 5000, random_state=1, prefer_horizontal=1,background_color='white', contour_color='cornflowerblue', colormap='Set2', contour_width=4, collocations=True, mask=mask).generate(text)  <br>
+**wordcloud = WordCloud(width = 7000, height = 5000, random_state=1, prefer_horizontal=1,background_color='white', contour_color='cornflowerblue', colormap='Set2', contour_width=4, collocations=True, mask=mask).generate(text) **  <br>
 
 Now, plot it: <br>
 
-plt.imshow(wordcloud) 
-plt.tight_layout(pad=0)
+**plt.imshow(wordcloud)  <br>
+plt.tight_layout(pad=0)**
 
 Our resultant wordcloud will be: <br>
 <img width="737" alt="image" src="https://user-images.githubusercontent.com/33736823/169430127-144d5033-e344-47d0-9721-6816ed5b8098.png">
